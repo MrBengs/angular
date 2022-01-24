@@ -1,0 +1,15 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main">
+    <mat-card fxFlex="25">
+        <mat-toolbar color="primary">Mot de passe oublié</mat-toolbar>
+        <p>Veuillez saisir l'adresse mail avec laquelle ce compte a été créer. Nous vous enverrons un lien pour renouveller votre mot de passe</p>
+        <form fxLayoutAlign="stretch" fxLayout="column" class="login-form">
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="E-mail">
+            </mat-form-field>
+            <button mat-button type="submit">Envoyer</button>
+            <div class="card-footer" fxLayoutAlign="start">
+                <small><a routerLink="../login">Retour à la page d'identification</a></small>
+            </div>
+        </form>
+    </mat-card>
+

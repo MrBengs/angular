@@ -1,0 +1,27 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main">
+    <mat-card fxFlex="25">
+        <mat-toolbar color="primary">Page d'identification</mat-toolbar>
+        <form #formLogin="ngForm" method="post" fxLayoutAlign="stretch" fxLayout="column" class="login-form">
+            
+            <div class="form-group">
+                <mat-form-field appearance="fill">
+                    <input matInput placeholder="Username" name="username" ([ngModel])="formulaire.username">
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field appearance="fill">
+                    <input type="password" matInput placeholder="Mot de passe" name="password" ([ngModel])="formulaire.password">
+                </mat-form-field>
+            </div>
+            
+            <button mat-button type="submit"><a routerLink="../sidebar">S'identifier</a></button>
+            <div class="card-footer" fxLayoutAlign="end">
+                <small><a routerLink="../forgotpass">Mot de passe oublier</a></small>
+            </div>
+        </form>
+        <mat-card-footer>
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+        </mat-card-footer>
+    </mat-card>
+
+</div>
