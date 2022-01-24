@@ -11,7 +11,7 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'sidebar', component:SidebarComponent,canActivate:[AuthGuard]},
   {path:'forgotpass', component:ForgotpassComponent},
-  {path:'**', redirectTo: '/notfound', pathMatch:'full'},
+  {path:'**', redirectTo: '/login', pathMatch:'full'},
   {path:'notfound', component:NotfoundComponent},
   
 ];
